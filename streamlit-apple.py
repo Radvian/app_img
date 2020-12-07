@@ -107,13 +107,18 @@ def main():
 
     elif pages == "Image Classifier":
         st.title("Image Classifier Testing Page")
-        st.markdown("Upload an image and the deployed deep learning model will classify it as either a Macbook, iPad, or iPhone.")
+        st.markdown("Paste a link to an image and the deployed deep learning model will classify it as either a Macbook, iPad, or iPhone.")
+        st.markdown("The image link should be in 'jpg', 'jpeg', or 'png' format.")
         st.markdown("Disclaimer: There are a lot of other Apple products such as AirPods, AppleWatch, or their full tower Mac, but in this project, \
             we'll focus on the three products: Macbook, iPad, and iPhone.")
-        image_upload = st.file_uploader("Upload your image", type=("jpg","png","jpeg"))
-        if image_upload is not None:
-            label, df_output, uploaded_image, s = predict_image(image_upload)
-
+        image_url = st.text_input("Paste the image file's link here")
+        import urllib, cStringIO
+        
+        if st.button("Classify the image"):
+            
+            file = cStringIO.StringIO(urllib.urlopen(image_url).read())
+            img = Image.open(file)
+            label, df_output, uploaded_image, s = predict_image(img)
             st.image(uploaded_image, width = None)
             st.write(label)
             st.write(df_output)
