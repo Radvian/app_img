@@ -17,6 +17,9 @@ import streamlit as st
 import requests
 import matplotlib.pyplot as plt
 import seaborn as sns
+import urllib.request
+from urllib.request import urlopen
+from io import StringIO
 
 def main():
     # importing tensorflow model
@@ -113,12 +116,10 @@ def main():
         st.markdown("Disclaimer: There are a lot of other Apple products such as AirPods, AppleWatch, or their full tower Mac, but in this project, \
             we'll focus on the three products: Macbook, iPad, and iPhone.")
         image_url = st.text_input("Paste the image file's link here")
-        import urllib
-        from io import StringIO
         
         if st.button("Classify the image"):
             
-            file = StringIO(urllib.urlopen(image_url).read())
+            file = StringIO(urlopen(image_url).read())
             img = Image.open(file)
             label, df_output, uploaded_image, s = predict_image(img)
             st.image(uploaded_image, width = None)
