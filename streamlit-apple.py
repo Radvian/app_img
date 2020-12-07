@@ -1,16 +1,10 @@
 import os
 import io
-import zipfile
-import random
 import tensorflow as tf
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from shutil import copyfile
 import pandas as pd
 import numpy as np
 import string
 import random
-from random import randint
-import warnings
 import PIL
 from PIL import Image
 import streamlit as st
