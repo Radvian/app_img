@@ -6,7 +6,7 @@ The aim is try to create an image classifier that can differentiate 3 of the mos
 
 ## File Descriptions
 
-There are only 4 files in this repository. 
+There are only 4 files in this repository (except the README and requirements file).
 - The notebook is a jupyter notebook which can be run on Google Colab (with GPU for faster training). It contains step-by-step on how to create the image classifier. 
 - The apple.jpg is just an image for our home page
 - 'model_inception_weights.h5' is the trained weights of our deep learning model's layers. This is used to load the model in our web app.
