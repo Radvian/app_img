@@ -1,0 +1,7 @@
+matplotlib
+streamlit==0.70.0
+tensorflow
+keras
+seaborn
+sklearn
+PIL
