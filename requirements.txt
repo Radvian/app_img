@@ -2,3 +2,4 @@ streamlit==0.72.0
 tensorflow
 keras
 seaborn
+cStringIO
