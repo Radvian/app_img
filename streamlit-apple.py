@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import urllib.request
 from urllib.request import urlopen
-from io import StringIO
+from io import BytesIO
 
 def main():
     # importing tensorflow model
@@ -119,7 +119,7 @@ def main():
         
         if st.button("Classify the image"):
             
-            file = StringIO(urlopen(image_url).read())
+            file = BytesIO(urlopen(image_url).read())
             img = Image.open(file)
             label, df_output, uploaded_image, s = predict_image(img)
             st.image(uploaded_image, width = None)
