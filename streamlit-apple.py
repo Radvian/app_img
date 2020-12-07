@@ -109,6 +109,11 @@ def main():
         st.markdown("The image link should be in 'jpg', 'jpeg', or 'png' format.")
         st.markdown("Disclaimer: There are a lot of other Apple products such as AirPods, AppleWatch, or their full tower Mac, but in this project, \
             we'll focus on the three products: Macbook, iPad, and iPhone.")
+        st.markdown("Second Disclaimer: Some image links might be forbidden to be read. If any error occurs, please try another image.")
+        st.markdown("(Initially, the author implements a file upload system, where the uploaded user file will be put into the deep learning model for classification. \
+            However, it only works for locally deployed web app. When the author host the web app online via share.streamlit.io, everytime we upload file, we are given with \
+            HTTP 500 error issues. This problem has been reported by the Streamlit community and is expected to be resolved in future updates to the package.)")
+        
         image_url = st.text_input("Paste the image file's link here")
         
         if st.button("Classify the image"):
