@@ -17,8 +17,8 @@ To view the project as a deployed online web app hosted by Streamlit, we can che
 
 ## Model Description
 
-The foundational model that we use is Inception-V3 from Keras' pretrained models. However, we cut it off until 'mixed6' layer, and then add our own layers. The upper layers are used to process the image files through multiple convolutions by using pretrained weights of the model. Here are the links to learn more about the pretrained model:
+The foundational model that we use is Inception-V3 from Keras' pretrained models. However, we cut it off until 'mixed7' layer, and then add our own layers. The upper layers are used to process the image files through multiple convolutions by using pretrained weights of the model. Here are the links to learn more about the pretrained model:
 - https://keras.io/api/applications/inceptionv3/
 - https://arxiv.org/abs/1512.00567
 
-We achieved up to 83% accuracy with this transfer learning method. 
+We achieved 88% accuracy on validation set, and 92% accuracy on training set.
