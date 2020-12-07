@@ -114,6 +114,9 @@ def main():
             st.markdown("Initially, the author implements a file upload system, where the uploaded user file will be put into the deep learning model for classification. \
             However, it only works for locally deployed web app. When the author host the web app online via share.streamlit.io, everytime we upload file, we are given with \
             HTTP 500 error issues. This problem has been reported by the Streamlit community and is expected to be resolved in future updates to the package.")
+         
+        st.markdown('Example of a link to an iPhone image: https://cnet1.cbsistatic.com/img/DK2ELJz5acYtFQXGiXpDcMnj0B8=/532x299/2018/06/04/6cf86c5c-687f-4755-b893-c12ecb2e1124/apple-wwdc-2018-1098.jpg')
+        st.markdown("Tips: right click on an image to 'open it on a new tab' or 'copy image address' to get the image's link")
         
         image_url = st.text_input("Paste the image file's link here")
         
