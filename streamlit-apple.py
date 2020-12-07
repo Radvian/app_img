@@ -120,7 +120,7 @@ def main():
         if st.button("Classify the image"):
             
             file = BytesIO(urlopen(image_url).read())
-            img = Image.open(file)
+            img = file
             label, df_output, uploaded_image, s = predict_image(img)
             st.image(uploaded_image, width = None)
             st.write(label)
