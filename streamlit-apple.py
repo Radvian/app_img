@@ -106,7 +106,7 @@ def main():
     elif pages == "Image Classifier":
         st.title("Image Classifier Testing Page")
         st.markdown("Paste a link to an image and the deployed deep learning model will classify it as either a Macbook, iPad, or iPhone.")
-        st.markdown("The image link should be in 'jpg', 'jpeg', or 'png' format.")
+        st.markdown("The linked image should be in 'jpg', 'jpeg', or 'png' format.")
         if st.button("See disclaimers"):
             st.markdown("Disclaimer: There are a lot of other Apple products such as AirPods, AppleWatch, or their full tower Mac, but in this project, \
             we'll focus on the three products: Macbook, iPad, and iPhone.")
