@@ -118,7 +118,7 @@ def main():
         
         if st.button("Classify the image"):
             
-            file = StringIO.StringIO(urllib.urlopen(image_url).read())
+            file = StringIO(urllib.urlopen(image_url).read())
             img = Image.open(file)
             label, df_output, uploaded_image, s = predict_image(img)
             st.image(uploaded_image, width = None)
