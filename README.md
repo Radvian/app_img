@@ -13,7 +13,7 @@ There are only 4 files in this repository (except the README and requirements fi
 - 'streamlit-apple.py' is the python file to deploy our web app in Streamlit.
 
 To run the project locally, you can download this repo and type ```streamlit run streamlit-apple.py``` inside this folder's directory. 
-To view the project as a deployed online web app hosted by Streamlit, we can check out this link:
+To view the project as a deployed online web app hosted by Streamlit, we can check out this link: https://share.streamlit.io/radvian/apple-img/main/streamlit-apple.py
 
 ## Model Description
 
