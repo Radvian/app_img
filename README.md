@@ -1,6 +1,7 @@
 # Welcome to my Apple Image Classification Project
 
 In this project, I explore how we can use CNN and transfer learning to build an image classifier. The dataset consists of 1500 images scraped from Google Image's top results for 'iPhone', 'iPad', and 'Macbook'. The full dataset can be downloaded here: https://www.kaggle.com/radvian/apple-products-image-dataset.
+
 The aim is try to create an image classifier that can differentiate 3 of the most mainstream Apple products - the iPhone, iPad, and Macbook. On the surface, they might be mistaken for each other (older iPhone design without notches can be mistaken for iPad, while newer iPad with keyboards can be mistaken for Macbook). While we can easily differentiate them, can we teach a deep learning model to do the same? And what method gives us the best accuracy? Those are the questions that will be answered in this project.
 
 ## File Descriptions
